@@ -21,6 +21,9 @@
       <ion-button expand="block" (click)="senhasService.novaSenha('SG')">Senha Geral</ion-button>
       <ion-button expand="block" (click)="senhasService.novaSenha('SP')">Senha Prioritária</ion-button>
       <ion-button expand="block" (click)="senhasService.novaSenha('SE')">Senha Exame</ion-button>
+      <br>
+      <ion-label>Últimas Senhas:</ion-label>
+      <br>
       <ion-list> 
         <ion-item *ngFor="let senha of senhasService.ultimasSenhas">
           {{senha}}
